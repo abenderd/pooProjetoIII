@@ -1,4 +1,3 @@
-package poo;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -24,11 +23,6 @@ public class Gauss {
 			r = new ResolvedorDeSistemasLinearesDeEquacoes(nomArqDds);
 
 			r.resolva();
-
-			System.out.println("\nOs valores das variaveis sao, respectivamente:");
-
-			for (int i = 0; i < r.getQtdEquacoes(); i++)
-				System.out.print(r.getValorDaVariavel(i) + " ");
 		} catch (Exception erro) {
 			System.err.println(erro.getMessage());
 		}
